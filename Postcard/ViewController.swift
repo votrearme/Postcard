@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         // Change the button after press
         sendButton.setTitle("Mail sent", forState: UIControlState.Normal)
         
+        // Test - the video does the same!!
         
     }
 
