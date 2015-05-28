@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
@@ -30,11 +31,13 @@ class ViewController: UIViewController {
     
     @IBAction func sendMailButtonPressed(sender: UIButton) {
         
-        // Show the label (that was hidden when set up)
+        // Show the labels (that was hidden when set up)
         messageLabel.hidden = false
+        nameLabel.hidden = false
         
-        // Update the label with the input from text field
+        // Update the labels with the input from text field
         messageLabel.text = enterNameTextField.text
+        nameLabel.text = enterMessageTextField.text
         
         // Hide keyboard
         enterNameTextField.resignFirstResponder()
